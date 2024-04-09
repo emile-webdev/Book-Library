@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: slategray;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    margin-top: 15px;
+}
+.btn {
+    background-color:lightgray;
+    color: black;
+    padding: 10px 15px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+#new-book-form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#new-book-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#new-book-form input {
+    font-size: 15px;
+    padding: 0 5px;
+    height: 30px;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+#submit-btn {
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#library {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.book-info {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+}
+.card-header h4 {
+    padding: 5px;
+}
+.card-body p {
+    padding: 5px;
+}
+.read-status {
+    color: blue;
+}
+.remove-btn, .toggle-read-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove-btn:hover, .toggle-read-btn:hover {
+    background-color: slategray;
+    color: white;
+}
