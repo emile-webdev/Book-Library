@@ -82,3 +82,32 @@ function toggleRead(index) {
     myLibrary[index].toggleRead();
     updateLibrary();
 }
+
+/* --- Form Validation --- */
+const form = (() => {
+    const title = document.getElementById('title');
+
+    title.addEventListener('input', () => {
+        title.setCustomValidity('');
+        title.checkValidity();
+    })
+
+    title.addEventListener('invalid', () => {
+        if (title.value === '') {
+            title.setCustomValidity('Enter a title');
+        }
+    })
+
+    const author = document.getElementById('author');
+
+    author.addEventListener('input', () => {
+        author.setCustomValidity('');
+        author.checkValidity();
+    })
+
+    author.addEventListener('invalid', () => {
+        if (author.value === '') {
+            author.setCustomValidity('Enter a author');
+        }
+    })
+})();
